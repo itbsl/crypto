@@ -38,8 +38,8 @@ func main() {
 	//sha512
 	hash.SHA512("123456")
 
-    src, key := "123456", "1234567812345678"
-    cipherText, _ := aes.Encrypt(src, key, aes.ModeCBC)
-    plainText, _ := aes.Decrypt(cipherText, key, aes.ModeCBC)
+	src, key := "123456", "1234567812345678"
+        cipherText, _ := aes.Encrypt(src, key, aes.ModeCBC)
+        plainText, _ := aes.Decrypt(cipherText, key, aes.ModeCBC)
 }
 ```
