@@ -4,7 +4,7 @@ import (
 	"crypto/aes"
 	"crypto/cipher"
 	"errors"
-	"github.com/itbsl/crypto/hash/utils"
+	"github.com/itbsl/crypto/utils"
 )
 
 type encryptMode string

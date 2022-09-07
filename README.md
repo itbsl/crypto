@@ -23,6 +23,7 @@ package main
 
 import (
 	"github.com/itbsl/crypto/hash"
+    "github.com/itbsl/crypto/aes"
 )
 
 func main() {
@@ -36,5 +37,9 @@ func main() {
 	hash.SHA384("123456")
 	//sha512
 	hash.SHA512("123456")
+
+  src, key := "123456", "1234567812345678"
+  cipherText, _ := aes.Encrypt(src, key, aes.ModeCBC)
+  plainText, _ := aes.Decrypt(cipherText, key, aes.ModeCBC)
 }
 ```
