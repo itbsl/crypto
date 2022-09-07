@@ -22,24 +22,24 @@ go get github.com/itbsl/crypto
 package main
 
 import (
-	"github.com/itbsl/crypto/hash"
-    "github.com/itbsl/crypto/aes"
+  "github.com/itbsl/crypto/hash"
+  "github.com/itbsl/crypto/aes"
 )
 
 func main() {
-	//md5加密
-	hash.MD5("123456")
-	//sha224
-	hash.SHA224("123456")
-	//sha256
-	hash.SHA256("123456")
-	//sha384
-	hash.SHA384("123456")
-	//sha512
-	hash.SHA512("123456")
-
-	src, key := "123456", "1234567812345678"
-        cipherText, _ := aes.Encrypt(src, key, aes.ModeCBC)
-        plainText, _ := aes.Decrypt(cipherText, key, aes.ModeCBC)
+    //md5加密
+    hash.MD5("123456")
+    //sha224
+    hash.SHA224("123456")
+    //sha256
+    hash.SHA256("123456")
+    //sha384
+    hash.SHA384("123456")
+    //sha512
+    hash.SHA512("123456")
+    
+    src, key := "123456", "1234567812345678"
+    cipherText, _ := aes.Encrypt(src, key, aes.ModeCBC)
+    plainText, _ := aes.Decrypt(cipherText, key, aes.ModeCBC)
 }
 ```
